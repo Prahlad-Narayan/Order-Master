@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Menu">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Text>
+            <Button id="backBtn" mnemonicParsing="false" style="-fx-background-color: orange;" text="&lt;" textFill="WHITE" StackPane.alignment="CENTER_LEFT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets left="10.0" />
+               </StackPane.margin>
+            </Button>
+         </children>
+      </StackPane>
+   </top>
+   <center>
+      <VBox id="modifyMenuVbox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE" />
+                  <ComboBox id="typeComboBox" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="148.0" spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+                  <TextField id="nameTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+                  <TextField id="priceTextField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="171.0" spacing="100.0">
+               <children>
+                  <Button id="addBtn" mnemonicParsing="false" style="-fx-background-color: lightgreen;" text="Add" />
+                  <Button id="removeBtn" layoutX="222.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: coral;" text="Remove" />
+               </children>
+            </HBox>
+            <Text id="statusText" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
